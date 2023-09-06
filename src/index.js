@@ -30,9 +30,9 @@ function App() {
   // });
 
   // ### 2  After firstRender
-  useEffect(() => {
-    console.log('Only First Render');
-  }, []);
+  // useEffect(() => {
+  //   console.log('Only First Render');
+  // }, []);
 
   // ### 3 : firstRender , Rerender wih category change
   useEffect(() => {
@@ -40,13 +40,13 @@ function App() {
     if (category !== '') fetchLists();
   }, [category]);
 
-  useEffect(() => {
-    console.log('## 3 : Effect Hook - Count');
-  }, [count]);
+  // useEffect(() => {
+  //   console.log('## 3 : Effect Hook - Count');
+  // }, [count]);
 
-  useEffect(() => {
-    console.log('## 4 : Effect Hook - All');
-  }, [count, category]);
+  // useEffect(() => {
+  //   console.log('## 4 : Effect Hook - All');
+  // }, [count, category]);
 
   console.log('render, rerender');
 
